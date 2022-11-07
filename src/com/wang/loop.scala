@@ -1,7 +1,6 @@
 package com.wang
 
 import scala.collection.immutable
-import scala.io.StdIn
 
 /**
  * @Author: 王航
@@ -31,13 +30,13 @@ object loop {
     // 1 - 10  步长为2
     println(1 until 10 ,2 )
 
-    for(i<-1 until(10)){
+    for(i<-1 until 10){
       println(i)
     }
 
     println()
 
-    for(i<-1 to(10)){
+    for(i<-1 to 10){
       println(i)
     }
 
@@ -56,7 +55,7 @@ object loop {
      *  99 乘法表
      */
     for(i<-1 to 9; j <- 1 to i){
-      var m = i * j
+      val m = i * j
 //      print(j+"*"+i+"="+m+"\t")
       // s 表示 插值字符串输出
       print(s"$j*$i=$m\t")
